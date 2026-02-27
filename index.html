@@ -51,8 +51,8 @@
                 <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#packages" class="nav-link">Safari</a></li>
-                <li class="nav-item"><a href="booking/index.html" class="nav-link" style="color: white; font-weight: 700;">Booking</a></li>
-                <li class="nav-item"><a href="review/index.html" class="nav-link">Reviews</a></li>
+                <li class="nav-item"><a href="booking/" class="nav-link" style="color: white; font-weight: 700;">Booking</a></li>
+                <li class="nav-item"><a href="review/" class="nav-link">Reviews</a></li>
                 <li class="nav-item"><a href="#footer" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -73,7 +73,7 @@
                 Step into a world where luxury meets the wild. Experience Udawalawa's majestic giants and untamed beauty with curated excellence.
             </p>
             <div class="hero-btn-wrapper" style="display: flex; gap: 15px; justify-content: flex-start;">
-                <a href="booking/index.html" class="btn btn-outline">Book Now</a>
+                <a href="booking/" class="btn btn-outline">Book Now</a>
             </div>
         </div>
     </section>
@@ -190,7 +190,7 @@
                         <p class="pkg-desc">A perfect 4-hour introduction. Witness herds of elephants and diverse birdlife in a compact, thrilling experience.</p>
                         <div class="pkg-footer">
                             <span class="duration"><i class="far fa-clock"></i> 4 Hours</span>
-                            <a href="booking/index.html?package=4%20Hours%20Package" class="btn" style="padding: 10px 25px; font-size: 0.75rem;">Reserve</a>
+                            <a href="booking/?package=4%20Hours%20Package" class="btn" style="padding: 10px 25px; font-size: 0.75rem;">Reserve</a>
                         </div>
                     </div>
                 </div>
@@ -204,7 +204,7 @@
                         <p class="pkg-desc">6 hours of deep exploration. Increased chances of spotting leopards and sloth bears in their natural habitat.</p>
                         <div class="pkg-footer">
                             <span class="duration"><i class="far fa-clock"></i> 6 Hours</span>
-                            <a href="booking/index.html?package=6%20Hours%20Package" class="btn" style="padding: 10px 25px; font-size: 0.75rem;">Reserve</a>
+                            <a href="booking/?package=6%20Hours%20Package" class="btn" style="padding: 10px 25px; font-size: 0.75rem;">Reserve</a>
                         </div>
                     </div>
                 </div>
@@ -218,7 +218,7 @@
                         <p class="pkg-desc">The ultimate 11-hour immersion. Cover every corner of the park with a luxury picnic lunch and beverages included.</p>
                         <div class="pkg-footer">
                             <span class="duration"><i class="far fa-clock"></i> 11 Hours</span>
-                            <a href="booking/index.html?package=Full%20Day%20(11%20Hours)%20Package" class="btn" style="padding: 10px 25px; font-size: 0.75rem;">Reserve</a>
+                            <a href="booking/?package=Full%20Day%20(11%20Hours)%20Package" class="btn" style="padding: 10px 25px; font-size: 0.75rem;">Reserve</a>
                         </div>
                     </div>
                 </div>
@@ -247,8 +247,8 @@
                     <ul class="footer-links">
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#packages">Safari Packages</a></li>
-                        <li><a href="booking/index.html">Booking</a></li>
-                        <li><a href="review/index.html">Guest Reviews</a></li>
+                        <li><a href="booking/">Booking</a></li>
+                        <li><a href="review/">Guest Reviews</a></li>
                     </ul>
                 </div>
                 <div class="footer-center-col">
@@ -277,6 +277,7 @@
     <a href="https://wa.me/94767301512" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
-    <script>const hamburger=document.querySelector('.hamburger');const navMenu=document.querySelector('.nav-menu');const navLinks=document.querySelectorAll('.nav-link');hamburger.addEventListener('click',()=>{hamburger.classList.toggle('active');navMenu.classList.toggle('active')});navLinks.forEach(link=>{link.addEventListener('click',()=>{hamburger.classList.remove('active');navMenu.classList.remove('active')})});const revealElements=document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-zoom');const revealObserver=new IntersectionObserver((entries,observer)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('active')}})},{root:null,threshold:0.15,rootMargin:"0px 0px -50px 0px"});revealElements.forEach(el=>{revealObserver.observe(el)});document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener('click',function(e){e.preventDefault();const targetId=this.getAttribute('href').substring(1);const targetElement=document.getElementById(targetId);if(targetElement){const headerHeight=document.getElementById('main-header').offsetHeight;const elementPosition=targetElement.getBoundingClientRect().top;const offsetPosition=elementPosition+window.pageYOffset-headerHeight;window.scrollTo({top:offsetPosition,behavior:'smooth'})}})});document.querySelectorAll('.scroll-top-trigger').forEach(trigger=>{trigger.addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});hamburger.classList.remove('active');navMenu.classList.remove('active')})});</script>
+    <!-- UPDATED SCRIPT: Now toggles animations on scroll -->
+    <script>const hamburger=document.querySelector('.hamburger');const navMenu=document.querySelector('.nav-menu');const navLinks=document.querySelectorAll('.nav-link');hamburger.addEventListener('click',()=>{hamburger.classList.toggle('active');navMenu.classList.toggle('active')});navLinks.forEach(link=>{link.addEventListener('click',()=>{hamburger.classList.remove('active');navMenu.classList.remove('active')})});const revealElements=document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-zoom');const revealObserver=new IntersectionObserver((entries,observer)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('active')}else{entry.target.classList.remove('active')}})},{root:null,threshold:0.15,rootMargin:"0px 0px -50px 0px"});revealElements.forEach(el=>{revealObserver.observe(el)});document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener('click',function(e){e.preventDefault();const targetId=this.getAttribute('href').substring(1);const targetElement=document.getElementById(targetId);if(targetElement){const headerHeight=document.getElementById('main-header').offsetHeight;const elementPosition=targetElement.getBoundingClientRect().top;const offsetPosition=elementPosition+window.pageYOffset-headerHeight;window.scrollTo({top:offsetPosition,behavior:'smooth'})}})});document.querySelectorAll('.scroll-top-trigger').forEach(trigger=>{trigger.addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});hamburger.classList.remove('active');navMenu.classList.remove('active')})});</script>
 </body>
 </html>
