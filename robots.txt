@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Block common system files or folders if you have them (Optional)
+# Disallow: /private/
+# Disallow: /logs/
+
+Sitemap: https://onelsafari.com/sitemap.xml
