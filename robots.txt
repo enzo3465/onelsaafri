@@ -1,8 +1,20 @@
 User-agent: *
 Allow: /
 
-# Block common system files or folders if you have them (Optional)
-# Disallow: /private/
-# Disallow: /logs/
+# Block sensitive or unnecessary system files
+Disallow: /cgi-bin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
 
-Sitemap: https://onelsafari.com/sitemap.xml
+# Block direct access to certain file types (optional extra security)
+Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.env$
+
+# Sitemap location
+Sitemap: https://onelsafariandresort.com/sitemap.xml
